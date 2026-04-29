@@ -26,10 +26,7 @@ This is the easiest path if you're not comfortable editing markdown or opening a
 ### Path 2 — Direct PR
 
 1. Fork this repo.
-2. Edit `README.md` — add your project as a new entry under the right section:
-   - **Production / Live Tools** — deployed and in active use
-   - **Workshops & Learning** — training, courses, lessons
-   - **Experiments & Prototypes** — works in progress, demos, side experiments
+2. Edit `README.md` — add your project as a new entry under **Production / Live Tools**.
 3. Use the same card format as existing entries (see below).
 4. Open a PR. Fill in the PR template checklist.
 
@@ -45,7 +42,7 @@ One-line description of what the project does and why it exists.
 - **Live:** https://your-deploy-url.com  (omit if not deployed)
 - **Owner:** @your-github-username
 - **Tech:** comma, separated, list, of, main, tools
-- **Status:** Live | WIP | Archived | Workshop artifact
+- **Status:** Live | WIP | Archived
 - **Ownership:** Official Yulu | Personal experiment (Yulu-themed)
 ```
 

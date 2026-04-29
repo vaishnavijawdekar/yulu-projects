@@ -53,18 +53,6 @@ body:
     validations:
       required: true
 
-  - type: dropdown
-    id: category
-    attributes:
-      label: Category
-      description: Which section of the README does this belong in?
-      options:
-        - Production / Live Tools
-        - Workshops & Learning
-        - Experiments & Prototypes
-    validations:
-      required: true
-
   - type: input
     id: tech
     attributes:
@@ -83,7 +71,6 @@ body:
         - Live
         - WIP
         - Archived
-        - Workshop artifact
     validations:
       required: true
 

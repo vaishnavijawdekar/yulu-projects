@@ -1,6 +1,6 @@
 # Yulu Projects
 
-A shared index of all Yulu-related projects — production tools, workshops, prototypes, and experiments built by PMs, designers, and engineers across the team.
+A shared index of all Yulu-related projects — production tools and pipelines built by PMs, designers, and engineers across the team.
 
 This repo doesn't host the projects themselves. It's a directory that points to where each project lives, who built it, and what it does.
 
@@ -31,50 +31,38 @@ Slack Q&A bot for querying Yulu competitive intelligence data. Companion to yulu
 - **Status:** Live
 - **Ownership:** Official Yulu
 
----
+### support-insights
+Weekly pipeline that fetches inbound support emails from Gmail, categorizes them with AI (issue type, product area, severity, sentiment), detects trends and anomalies, and delivers an executive summary to Slack and email. Answers: *what are users struggling with this week?*
 
-## Workshops & Learning
-
-Educational material, internal training, course content.
-
-### yulu-ai-workshop
-6-session AI workshop series for PMs and designers at Yulu. Covers LLMs, agents, MCP, and AI-augmented product workflows. Includes a course hub website (Astro + Starlight) with interactive React components and hands-on exercises.
-
-- **Repo:** https://github.com/kritisharma-yulu/yulu-ai-workshop
-- **Owner:** @kritisharma-yulu (with @akshay)
-- **Tech:** Astro, Starlight, React, TypeScript, Vercel
-- **Status:** Active
-- **Ownership:** Official Yulu (internal training)
-
----
-
-## Experiments & Prototypes
-
-Workshop exercises, demos, and exploratory builds.
-
-### yulu-landing-exercise
-Single-page landing page concept for yulu.bike. Built as a Workshop 3 hands-on exercise — vanilla HTML/CSS/JS, no dependencies.
-
-- **Lives in:** `yulu-ai-workshop/yulu-landing-exercise/` (no separate repo)
+- **Repo:** https://github.com/kritisharma-yulu/support-insights
 - **Owner:** @kritisharma-yulu
-- **Tech:** HTML, CSS, JavaScript
-- **Status:** Workshop artifact
-- **Ownership:** Official Yulu (workshop artifact)
+- **Tech:** Python, SQLite, Gmail API, OpenAI, Slack Bolt
+- **Status:** Live
+- **Ownership:** Official Yulu
 
-### yulu-rag-exercise
-Rider support chatbot exercise. RAG over an internal Yulu knowledge base (parking, pricing, refunds, safety, hours).
+### metrics-agent
+Weekly pipeline that pulls product metrics from Gmail, stores them in SQLite, runs anomaly detection (z-score), generates AI-powered analyst summaries plus matplotlib trend charts, and posts to Slack and email.
 
-- **Lives in:** `yulu-ai-workshop/yulu-rag-exercise/` (no separate repo)
+- **Repo:** https://github.com/kritisharma-yulu/metrics-agent
 - **Owner:** @kritisharma-yulu
-- **Tech:** RAG, LLM, Yulu KB
-- **Status:** Workshop artifact
-- **Ownership:** Official Yulu (workshop artifact)
+- **Tech:** Python, SQLite, Gmail API, OpenAI, matplotlib, Slack Bolt
+- **Status:** Live
+- **Ownership:** Official Yulu
+
+### yulu-metrics-dashboard
+Self-contained interactive HTML dashboard that visualizes the metrics-agent dataset (Plotly.js charts, trend views, anomaly highlights). Auto-deployed on Render whenever metrics-agent pushes new data.
+
+- **Repo:** https://github.com/kritisharma-yulu/yulu-metrics-dashboard
+- **Owner:** @kritisharma-yulu
+- **Tech:** Plotly.js, HTML, Render
+- **Status:** Live
+- **Ownership:** Official Yulu
 
 ---
 
 ## Add Your Project
 
-If you've built something Yulu-related — a tool, prototype, dashboard, exercise, anything — add it here so the rest of the team can find it.
+If you've built something Yulu-related — a tool, dashboard, pipeline, anything — add it here so the rest of the team can find it.
 
 **Two ways to contribute:**
 1. **Easy:** [Open an issue using the "Add a project" template](../../issues/new?template=add-project.yml) — fill in the form and we'll add the entry for you.
