@@ -1,0 +1,107 @@
+name: Add a project
+description: Submit a Yulu-related project to be added to the hub index
+title: "[Add Project] <project name>"
+labels: ["add-project"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing your project! Fill in the fields below and a maintainer will add an entry to the README within a few days.
+
+  - type: input
+    id: project-name
+    attributes:
+      label: Project name
+      description: Short, lowercase, hyphenated. Example: yulu-rider-feedback
+      placeholder: my-yulu-project
+    validations:
+      required: true
+
+  - type: input
+    id: repo-url
+    attributes:
+      label: Repo URL
+      description: Link to the GitHub repo (or folder, if it lives inside another repo)
+      placeholder: https://github.com/owner/my-yulu-project
+    validations:
+      required: true
+
+  - type: input
+    id: live-url
+    attributes:
+      label: Live URL (optional)
+      description: If deployed, where can someone use it?
+      placeholder: https://my-project.example.com
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: One-line description
+      description: What does it do, in plain language? Why does it exist?
+      placeholder: Tracks Yulu rider sentiment from app store reviews and surfaces weekly trends in Slack.
+    validations:
+      required: true
+
+  - type: input
+    id: owner
+    attributes:
+      label: Owner / Maintainer
+      description: GitHub username(s) of who built or maintains this. Use @-handles.
+      placeholder: "@kritisharma2708"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Which section of the README does this belong in?
+      options:
+        - Production / Live Tools
+        - Workshops & Learning
+        - Experiments & Prototypes
+    validations:
+      required: true
+
+  - type: input
+    id: tech
+    attributes:
+      label: Tech stack
+      description: Main tools, languages, frameworks. Comma-separated.
+      placeholder: Python, FastAPI, Postgres, Claude API
+    validations:
+      required: true
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      description: Where is the project at?
+      options:
+        - Live
+        - WIP
+        - Archived
+        - Workshop artifact
+    validations:
+      required: true
+
+  - type: dropdown
+    id: ownership
+    attributes:
+      label: Ownership
+      description: Be honest — is this official company work or a personal experiment that happens to be Yulu-themed?
+      options:
+        - Official Yulu
+        - Personal experiment (Yulu-themed)
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else?
+      description: Additional context, screenshots, related links, or things you want the maintainer to know.
+    validations:
+      required: false
