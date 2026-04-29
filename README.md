@@ -15,21 +15,21 @@ Projects that are deployed and in active use.
 ### yulu-intel
 Automated competitive intelligence platform for the Indian micromobility market. Tracks competitors (Bounce, Rapido, Zypp), generates monthly analysis reports via GitHub Actions, and delivers insights to Slack.
 
-- **Repo:** https://github.com/kritisharma2708/yulu-intel
+- **Repo:** https://github.com/kritisharma-yulu/yulu-intel
 - **Live:** https://competeiq-reports.onrender.com
-- **Owner:** @kritisharma2708
+- **Owner:** @kritisharma-yulu
 - **Tech:** Python, Node.js, Supabase, GitHub Actions, Exa API, OpenAI
 - **Status:** Live
-- **Ownership:** Personal experiment (Yulu-themed)
+- **Ownership:** Official Yulu
 
 ### yulu-intel-slack-bot
 Slack Q&A bot for querying Yulu competitive intelligence data. Companion to yulu-intel — gives the team a conversational interface over the same dataset.
 
-- **Repo:** https://github.com/kritisharma2708/yulu-intel-slack-bot
-- **Owner:** @kritisharma2708
+- **Repo:** https://github.com/kritisharma-yulu/yulu-intel-slack-bot
+- **Owner:** @kritisharma-yulu
 - **Tech:** Node.js, Slack Bolt, OpenAI, Supabase
 - **Status:** Live
-- **Ownership:** Personal experiment (Yulu-themed)
+- **Ownership:** Official Yulu
 
 ---
 
@@ -40,8 +40,8 @@ Educational material, internal training, course content.
 ### yulu-ai-workshop
 6-session AI workshop series for PMs and designers at Yulu. Covers LLMs, agents, MCP, and AI-augmented product workflows. Includes a course hub website (Astro + Starlight) with interactive React components and hands-on exercises.
 
-- **Repo:** https://github.com/kritisharma2708/yulu-ai-workshop
-- **Owner:** @kritisharma2708 (with @akshay)
+- **Repo:** https://github.com/kritisharma-yulu/yulu-ai-workshop
+- **Owner:** @kritisharma-yulu (with @akshay)
 - **Tech:** Astro, Starlight, React, TypeScript, Vercel
 - **Status:** Active
 - **Ownership:** Official Yulu (internal training)
@@ -56,19 +56,19 @@ Workshop exercises, demos, and exploratory builds.
 Single-page landing page concept for yulu.bike. Built as a Workshop 3 hands-on exercise — vanilla HTML/CSS/JS, no dependencies.
 
 - **Lives in:** `yulu-ai-workshop/yulu-landing-exercise/` (no separate repo)
-- **Owner:** @kritisharma2708
+- **Owner:** @kritisharma-yulu
 - **Tech:** HTML, CSS, JavaScript
 - **Status:** Workshop artifact
-- **Ownership:** Personal experiment
+- **Ownership:** Official Yulu (workshop artifact)
 
 ### yulu-rag-exercise
 Rider support chatbot exercise. RAG over an internal Yulu knowledge base (parking, pricing, refunds, safety, hours).
 
 - **Lives in:** `yulu-ai-workshop/yulu-rag-exercise/` (no separate repo)
-- **Owner:** @kritisharma2708
+- **Owner:** @kritisharma-yulu
 - **Tech:** RAG, LLM, Yulu KB
 - **Status:** Workshop artifact
-- **Ownership:** Personal experiment
+- **Ownership:** Official Yulu (workshop artifact)
 
 ---
 
@@ -84,6 +84,6 @@ If you've built something Yulu-related — a tool, prototype, dashboard, exercis
 
 ## About this hub
 
-- Maintained by Kriti Sharma (@kritisharma2708) with support from Akshay (HoP).
-- Hosted on a personal GitHub account for now; will transfer to an official Yulu org if/when one is set up.
+- Maintained by Kriti Sharma (@kritisharma-yulu) with support from Akshay (HoP).
+- Hosted on the `kritisharma-yulu` GitHub account, the home for all Yulu-related repos.
 - Open to all Yulu PMs, designers, and engineers. External collaborators welcome via PR.
