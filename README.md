@@ -58,6 +58,17 @@ Self-contained interactive HTML dashboard that visualizes the metrics-agent data
 - **Status:** Live
 - **Ownership:** Official Yulu
 
+### ux-research-insights-bot
+
+  Slack bot that ingests UX research dumps from #ux-research into Google Sheets and answers questions via
+  @mention in #research-insights using AI.
+
+  - **Repo:** https://github.com/vaishnavijawdekar/ux-research-insights-bot
+  - **Owner:** @vaishnavijawdekar
+  - **Tech:** Python, Slack Bolt, OpenAI, Google Sheets, Railway
+  - **Status:** Live
+  - **Ownership:** Official Yulu
+  
 ---
 
 ## Add Your Project
